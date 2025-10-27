@@ -1,4 +1,3 @@
 # Arionna Kristy
-<index.html>
-/Users/arionnakristy/Documents/GitHub/WEBT2310/htmlandcssreview/index.html
+<link rel="htmlandcssreview" href="index.html">
 
