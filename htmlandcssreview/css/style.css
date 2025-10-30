@@ -1,63 +1,289 @@
 /*Global Styles*/
+
 *{
-    margin: 0;
-    padding: 0;
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
 }
+
+.hero {
+    
+    background-repeat: no-repeat;
+    background-image: url(../images/paintskywaterbackground.jpg);
+    background-size: cover;
+    background-position: cover;
+    color: black;
+    justify-content: space-evenly;
+    height: 50vh;
+    margin-bottom: 20px;
+    text-align: center;
+    align-items: center;
+    display: block;
+    font-family: fantasy;
+    font-size: 2em;
+    
+}
+
+.hero1 {
+    background-repeat: no-repeat;
+    background-image: url(../images/collageart.jpg);
+    background-size: cover;
+    background-position: cover;
+    color: black;
+    justify-content: space-evenly;
+    height: 50vh;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace ;
+}
+
+.hero2 {
+    background-repeat: no-repeat;
+    background-image: url(../images/paintsplatterbackground.jpg);
+    background-size: cover;
+    background-position: cover;
+    color: black;
+    justify-content: space-evenly;
+    height: 50vh;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace ;
+}
+
+.hero3 {
+    padding: 0%;
+    margin: 0%;
+    background-repeat: no-repeat;
+    background-image: url(../images/paintbrushesbundle.jpg);
+    background-size: cover;
+    background-position: cover;
+    color: black;
+    justify-content: space-evenly;
+    height: 50vh;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace ;
+}
+
+.hero4 {
+    padding: 0%;
+    margin: 0%;
+    background-repeat: no-repeat;
+    background-image: url(../images/origami.jpg);
+    background-size: cover;
+    background-position: cover;
+    color: black;
+    justify-content: center;
+    height: 50vh;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    font-family: fantasy;
+    font-size: 1.2em;
+}
+
+.hero5 {
+    padding: 0%;
+    margin: 0%;
+    background-repeat: no-repeat;
+    background-image: url(../images/texturedmulticolorbackground.jpg);
+    background-size: cover;
+    background-position: cover;
+    color: black;
+    justify-content: center;
+    height: 50vh;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    font-family: fantasy;
+    font-size: 1.2em;
+}
+
+
+
+
+
+:root {
+    --bar-width: 60px;
+    --bar-height: 8px;
+    --hamburger-gap: 6px;
+    --foreground: #4F818E;
+    --background: white;
+    --hamburger-margin: 8px;
+    -o-animation-timing: 200ms ease-in-out;
+    --hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2);
+}
+
+.hamburger-menu {
+    --x-width: calc(var(--hamburger-height) * 1.41421356237);
+
+    display: flex;
+    flex-direction: column;
+    gap: var(--hamburger-gap);
+    width: max-content;
+    position: absolute;
+    top: var(--hamburger-margin);
+    left: var(--hamburger-margin);
+    z-index: 2;
+    cursor: pointer;
+
+}
+
+.hamburger-menu::before,
+.hamburger-menu::after,
+.hamburger-menu input {
+    content: "";
+    width: var(--bar-width);
+    height: var(--bar-height);
+    background-color: var(--foreground);
+    border-radius: 9999px;
+    transform-origin: left center;
+    transition: opacity var(--animation-timing), width var(--animation-timing), rotate var(--animation-timing), translate var(--animation-timing);
+    
+}
+
+
+.hamburger-menu input {
+    appearance: none;
+    padding: 0%;
+    margin: 0%;
+    outline: none;
+    pointer-events: none;
+}
+
+.hamburger-menu:has(input:checked)::before {
+    rotate: 45deg;
+    width: var(--x-width);
+    translate: 0 calc(var(--bar-height) / 2);
+}
+ 
+.hamburger-menu:has(input:checked)::after {
+    rotate: -45deg;
+    width: var(--x-width);
+    translate: 0 calc(var(--bar-height) / 2);
+}
+
+.hamburger-menu input:checked {
+    opacity: 0;
+    width: 0;
+}
+
+
+
+
+
 
 
 body {
-    background-color: rgb(175, 122, 224);
+    height: 100%;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(62, 33, 0);
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    margin: 0%;
+
 }
+
+#container {
+    margin: 10px;
+    padding: 6px;
+    padding-top: 10px;
+    outline: groove;
+    outline-width: 6px;
+   background-color: white;
+    outline-color: gold;
+}
+
+a:hover {
+    color: rgb(189, 110, 14);
+    text-decoration: none;
+}
+
 
 img {
     display: block;
     width: 100%;
-    margin: 0 auto;
+    height: 100%;
+    margin: center;
 } 
 
-nav, 
-header, 
-section, 
-footer {
-    background-color: rgb(203, 180, 223);
-}
 
 /* Mobile Styles */
 
-#container {
-    margin: 10px;
-}
 
-p {
-    margin: 10px;
-    padding: 10px;
-}
+.nav-container {
+    width: 100%;
+    max-width: 120px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+   
 
+}
 
 nav {
-    margin-bottom: 10px;
+    background-color: antiquewhite;
+    padding: 0%;
+    border-radius: 50%;
+    outline: auto;
+    outline-style: groove;
+    outline-color: gold;
+    border-bottom: 1px solid var(--hover-color);
     text-align: center;
-    padding: 5px;
+    font-size: x-small;
+    
 }
 
 nav ul {
     list-style-type: none;
+    border-radius: 50%;
+    margin: 0%;
+    padding: 0%;
+    display: flex;
+    text-align: center;
+
 }
 
+
 nav li {
-    display: block;
+    display: inline-block;
+    margin: 0 0px;
 }
 
 nav li a {
+    border-radius: 50%;
     display: block;
-    background-color: aquamarine;
-    margin: 10px;
-    height: 40px;
-    line-height: 40px;
-    font-size: 1.25em;
+    border: 2px;
+    height: 0px;
+    margin: 5px 0;
+    padding: 0px;
+    background-color: antiquewhite;
+    position: relative;
+    line-height: 5px;
+    font-size: 20px;
     font-weight: bold;
+    text-align: center;
     text-decoration: none;
-    color: black;
+    text-transform: none;
+    color: rgb(62, 33, 0);
+}
+#lower {
+    border: 2px solid;
+    padding: 10px;
+}
+
+
+
+footer {
+    padding: 40px 0;
+    text-align: center;
 }
 
 section {
@@ -65,3 +291,5 @@ section {
     padding: 10px;
 
 }
+
+
