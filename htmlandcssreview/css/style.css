@@ -110,79 +110,6 @@
 
 
 
-
-
-:root {
-    --bar-width: 60px;
-    --bar-height: 8px;
-    --hamburger-gap: 6px;
-    --foreground: #4F818E;
-    --background: white;
-    --hamburger-margin: 8px;
-    -o-animation-timing: 200ms ease-in-out;
-    --hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2);
-}
-
-.hamburger-menu {
-    --x-width: calc(var(--hamburger-height) * 1.41421356237);
-
-    display: flex;
-    flex-direction: column;
-    gap: var(--hamburger-gap);
-    width: max-content;
-    position: absolute;
-    top: var(--hamburger-margin);
-    left: var(--hamburger-margin);
-    z-index: 2;
-    cursor: pointer;
-
-}
-
-.hamburger-menu::before,
-.hamburger-menu::after,
-.hamburger-menu input {
-    content: "";
-    width: var(--bar-width);
-    height: var(--bar-height);
-    background-color: var(--foreground);
-    border-radius: 9999px;
-    transform-origin: left center;
-    transition: opacity var(--animation-timing), width var(--animation-timing), rotate var(--animation-timing), translate var(--animation-timing);
-    
-}
-
-
-.hamburger-menu input {
-    appearance: none;
-    padding: 0%;
-    margin: 0%;
-    outline: none;
-    pointer-events: none;
-}
-
-.hamburger-menu:has(input:checked)::before {
-    rotate: 45deg;
-    width: var(--x-width);
-    translate: 0 calc(var(--bar-height) / 2);
-}
- 
-.hamburger-menu:has(input:checked)::after {
-    rotate: -45deg;
-    width: var(--x-width);
-    translate: 0 calc(var(--bar-height) / 2);
-}
-
-.hamburger-menu input:checked {
-    opacity: 0;
-    width: 0;
-}
-
-
-
-
-
-
-
 body {
     height: 100%;
     text-align: center;
@@ -217,6 +144,18 @@ img {
     margin: center;
 } 
 
+.col {
+    border: 2px solid black;
+    margin: 10px;
+    padding: 10px;
+    width: 33.33%;
+}
+
+.row {
+    display: flex;
+}
+
+
 
 /* Mobile Styles */
 
@@ -233,8 +172,8 @@ img {
 
 nav {
     background-color: antiquewhite;
-    padding: 0%;
-    border-radius: 50%;
+    padding: 35px;
+    border-radius: 10%;
     outline: auto;
     outline-style: groove;
     outline-color: gold;
@@ -264,22 +203,18 @@ nav li a {
     border-radius: 50%;
     display: block;
     border: 2px;
-    height: 0px;
-    margin: 5px 0;
+    height: 40px;
+    margin: 10px 0;
     padding: 0px;
     background-color: antiquewhite;
     position: relative;
-    line-height: 5px;
+    line-height: 40px;
     font-size: 20px;
     font-weight: bold;
     text-align: center;
     text-decoration: none;
     text-transform: none;
     color: rgb(62, 33, 0);
-}
-#lower {
-    border: 2px solid;
-    padding: 10px;
 }
 
 
@@ -294,5 +229,13 @@ section {
     padding: 10px;
 
 }
+
+
+
+
+
+
+
+
 
 
