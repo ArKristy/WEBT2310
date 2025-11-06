@@ -1,241 +1,52 @@
-/*Global Styles*/
-
-*{
-    margin: 10px;
-    padding: 10px;
-    box-sizing: border-box;
+body {
+    background-color: antiquewhite;
+    color: midnightblue;
 }
 
-.hero {
-    
-    background-repeat: no-repeat;
-    background-image: url(../images/paintskywaterbackground.jpg);
+/* Classes */
+
+.navbar {
+    background-color: hsl(34, 78%, 91%);
+}
+
+/* IDs */
+
+#header_img {
+    background-image: url(../images/womanhandholdingstringscrapbooking.jpg);
     background-size: cover;
-    background-position: cover;
-    color: black;
-    justify-content: space-evenly;
-    height: 50vh;
-    margin-bottom: 20px;
-    text-align: center;
-    align-items: center;
-    display: block;
-    font-family: fantasy;
-    font-size: 2em;
-    
+    background-position: center;
 }
 
-.hero1 {
-    background-repeat: no-repeat;
-    background-image: url(../images/collageart.jpg);
+#header {
+    width: 50%;
+}
+
+#welcome_img {
+    background-image: url(../images/crinkledpaperbackground.jpg);
     background-size: cover;
-    background-position: cover;
-    color: black;
-    justify-content: space-evenly;
-    height: 50vh;
-    text-align: center;
-    align-items: center;
-    display: flex;
-    text-align: center;
-    font-family: 'Courier New', Courier, monospace ;
+    background-position: center;
 }
 
-.hero2 {
-    padding: 0%;
-    margin: 0%;
-    background-repeat: no-repeat;
-    background-image: url(../images/paintsplatterbackground.jpg);
+#tutorials_img {
+    background-image: url(../images/canvaseaselinstudio.jpg);
     background-size: cover;
-    background-position: cover;
-    color: black;
-    justify-content: space-evenly;
-    height: 50vh;
-    text-align: center;
-    align-items: center;
-    display: flex;
-    text-align: center;
-    font-family: fantasy;
-    font-size: 1.2em;
+    background-position: center;
 }
 
-.hero3 {
-    padding: 0%;
-    margin: 0%;
-    background-repeat: no-repeat;
+#testimonies_img {
+    background-image: url(../images/paintbyyellowbook.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#offers_img {
     background-image: url(../images/paintbrushesbundle.jpg);
     background-size: cover;
-    background-position: cover;
-    color: black;
-    justify-content: space-evenly;
-    height: 50vh;
-    text-align: center;
-    align-items: center;
-    display: flex;
-    text-align: center;
-    font-family: 'Courier New', Courier, monospace ;
+    background-position: center;
 }
 
-.hero4 {
-    padding: 0%;
-    margin: 0%;
-    background-repeat: no-repeat;
-    background-image: url(../images/origami.jpg);
-    background-size: cover;
-    background-position: cover;
-    color: black;
-    justify-content: center;
-    height: 50vh;
-    text-align: center;
-    align-items: center;
-    display: flex;
-    font-family: fantasy;
-    font-size: 1.2em;
+@media (min-width: 1024px) {
+    #panel_bg {
+        width: 50%;
+    }
 }
-
-.hero5 {
-    padding: 0%;
-    margin: 0%;
-    background-repeat: no-repeat;
-    background-image: url(../images/texturedmulticolorbackground.jpg);
-    background-size: cover;
-    background-position: cover;
-    color: black;
-    justify-content: center;
-    height: 50vh;
-    text-align: center;
-    align-items: center;
-    display: flex;
-    font-family: fantasy;
-    font-size: 1.2em;
-}
-
-
-
-body {
-    height: 100%;
-    text-align: center;
-    font-family: 'Courier New', Courier, monospace;
-    color: rgb(62, 33, 0);
-    scroll-behavior: smooth;
-    overflow-x: hidden;
-    margin: 0%;
-
-}
-
-#container {
-    margin: 10px;
-    padding: 6px;
-    padding-top: 10px;
-    outline: groove;
-    outline-width: 6px;
-    background-color: white;
-    outline-color: gold;
-}
-
-a:hover {
-    color: rgb(189, 110, 14);
-    text-decoration: none;
-}
-
-
-img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    margin: center;
-} 
-
-.col {
-    border: 2px solid black;
-    margin: 10px;
-    padding: 10px;
-    width: 33.33%;
-}
-
-.row {
-    display: flex;
-}
-
-
-
-/* Mobile Styles */
-
-
-.nav-container {
-    width: 100%;
-    max-width: 120px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-   
-
-}
-
-nav {
-    background-color: antiquewhite;
-    padding: 35px;
-    border-radius: 10%;
-    outline: auto;
-    outline-style: groove;
-    outline-color: gold;
-    border-bottom: 1px solid var(--hover-color);
-    text-align: center;
-    font-size: x-small;
-    
-}
-
-nav ul {
-    list-style-type: none;
-    border-radius: 50%;
-    margin: 0%;
-    padding: 0%;
-    display: flex;
-    text-align: center;
-
-}
-
-
-nav li {
-    display: inline-block;
-    margin: 0 0px;
-}
-
-nav li a {
-    border-radius: 50%;
-    display: block;
-    border: 2px;
-    height: 40px;
-    margin: 10px 0;
-    padding: 0px;
-    background-color: antiquewhite;
-    position: relative;
-    line-height: 40px;
-    font-size: 20px;
-    font-weight: bold;
-    text-align: center;
-    text-decoration: none;
-    text-transform: none;
-    color: rgb(62, 33, 0);
-}
-
-
-
-footer {
-    padding: 40px 0;
-    text-align: center;
-}
-
-section {
-    margin: 10px 0;
-    padding: 10px;
-
-}
-
-
-
-
-
-
-
-
-
-

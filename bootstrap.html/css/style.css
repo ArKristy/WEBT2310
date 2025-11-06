@@ -1,0 +1,46 @@
+body {
+    background-color: antiquewhite;
+    color: midnightblue;
+}
+
+/* Classes */
+
+.navbar {
+    background-color: hsl(34, 78%, 91%);
+}
+
+/* IDs */
+
+#header_img {
+    background-image: url(../images/womanhandholdingstringscrapbooking.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#header {
+    width: 50%;
+}
+
+#welcome_img {
+    background-image: url(../images/crinkledpaperbackground.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#tutorials_img {
+    background-image: url(../images/canvaseaselinstudio.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#testimonies_img {
+    background-image: url(../images/paintbyyellowbook.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+@media (min-width: 768px) {
+    #panel_bg {
+        width: 50%;
+    }
+}

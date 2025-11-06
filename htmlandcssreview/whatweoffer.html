@@ -4,95 +4,90 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>What We Offer</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-   
-  
-    <nav>
-        <ul>
-            <li><a href="HomeCollage.html">Home Page</a></li>
-            <li><a href="whatwedo.html">What We Do</a></li>
-            <li><a href="whatweoffer.html">What We Offer</a></li>
-            <li><a href="whatinspiresus.html">What Inspires Us?</a></li>
-        </ul>
-    </nav>
     
-     <div id="container">
-        <header>
-           
-            <div class="hero4">
-                <div class="hero4-content">
+</head>
+
+<body> 
+    <div class="container">
+        <nav class="navbar navbar-expand-lg bg-antiquewhite">
+            <div class="container-fluid">
                 
-                    <h1 class="hero4-content">What We Offer</h1>
-                    <p class="hero4-description"></p>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                 </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav me-auto">
+                         <li class="nav-item">
+                             <a class="nav-link active" aria-current="page" href="whatwedo.html">What We Do</a>
+                        </li>
+                        <li class="nav-item">
+                             <a class="nav-link" href="whatweoffer.html">What We Offer</a>
+                        </li>
+                        <li class="nav-item">
+                             <a class="nav-link" href="whatinspiresus.html">What Inspires Us</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Extras and Support
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Donate Directly</a></li>
+                                <li><a class="dropdown-item" href="#">Sign Up for classes and clubs!</a></li>
+                                <li><a class="dropdown-item" href="#">Upcoming Events</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <button class="btn btn-outline-warning d-block" type="button">Sign Up Now!</button>
                 </div>
             </div>
-         
-            
-        </header>
-        <main>
-            
-                 <div class="hero3">
-            <div class="hero3-content">
-              <h1 class="hero3-content">Art Materials</h1>
-              <p class="hero3-description"></p>
+        </nav>
+   
+        <div id="offers_img" class="p-5 mb-4 bg-light rounded-2">
+                <div class="container-fluid py-5">
+                    <h1 class="text-center">Offers</h1>
+                    <button class="btn btn-warning rounded-0 mx-auto d-block mt-s rounded-2" type="button">Learn More</button>
+                </div>
             </div>
-         </div>
-                <div>
-                   <p> -Drawing materials like charcoal and graphite
-                        -Acrylic, Oil, Watercolor, Guache, and Glass paint!
-                        -Clay and Pottery, Terracotta and Polymer
-                        -All types of ink in pens or bottles
-                        -Colored pencils
-                        -Crayons
-                        -Markers
-                        -Craft supplies
-                        -Oil pastels
-                        -Woodworking materials
-                        -Glass blowing
-                        -Printmaking
-                        -Paper and Book making
-                        -Jewelery making
-                        -Even some musical instruments!</p>
-                </div>    
-            <div class="row">
-                <div class="col"> 
-                    <h3>Lessons and Classes</h3>
-                    <p>Sign up for our classes as they are posted! No extra subscription needed. We offer painting, clay, and glass blowing classes currently.</p>
-                </div> 
-
-                <div class="col"> 
-                    <h3>Clubs</h3>
-                    <p>
-
-                    </p>
-                
-                    <p>As well as clubs specifically for painting, scrapbooking, and playing music!</p>
-                </div> 
-
-        
-       
-                <div class="col"> 
-                    <h3>Drinks and Snacks</h3>
-                   
-                    <p>-Filtered water for free
-                        -Coffee, of course
-                        -Tea 
-                        -Juices
-                        -Can sodas
-                        -Wine
-                        -Select draft beer 
-                        -Small charcouterie board
-                        -Bag chips or pretzels</p>
-                    
-                </div>
-                </div>
-                <img src="images/womanhandholdingstringscrapbooking.jpg" alt="Scrapbooking">
-            </main>
+            <hr>
+            
+    <div id="carouselExampleFade" class="carousel slide carousel-fade">
+  <div class="carousel-inner">
+     <div class="carousel-item">
+      <img src="images/graphite.jpg" class="d-block w-100" alt="graphite">
+    </div>
+    <div class="carousel-item active">
+      <img src="images/painting.jpg" class="d-block w-100" alt="painting">
+    </div>
+    <div class="carousel-item">
+      <img src="images/clay.jpg" class="d-block w-100" alt="clay">
+    </div>
+    <div class="carousel-item">
+      <img src="images/ink.jpg" class="d-block w-100" alt="ink">
+    </div>
+     <div class="carousel-item">
+      <img src="images/glassblowing.jpg" class="d-block w-100" alt="glassblowing">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+            <hr>
+    
    
 
-    <footer>&copy; 2025 The Collage Arionna Kristy</footer>
+   <hr>
+            <div class="col-lg-12 py-4 text-center">
+                &copy; 2025 The Collage 
+            </div>
 </body>
 </html>
 
