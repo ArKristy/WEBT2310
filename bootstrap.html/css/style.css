@@ -39,8 +39,3 @@ body {
     background-position: center;
 }
 
-@media (min-width: 768px) {
-    #panel_bg {
-        width: 50%;
-    }
-}
