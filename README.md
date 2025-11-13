@@ -6,5 +6,5 @@
 
 
 <ul>
-<li><a href="FigmaSite.html/index.html" target=" _blank">TheCollage - 4PageSite</a></li>
+<li><a href="FigmaSite.html/index.html" target=" _blank">Figma Site</a></li>
 </ul>
