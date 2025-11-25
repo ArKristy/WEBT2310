@@ -11,5 +11,5 @@
 
 
 <ul>
-<li><a href="PlantSite.html/plant.html" target=" _blank">Figma Site</a>Plant Moodboard & Greenhouse Tour</li>
+<li><a href="PlantSite.html/plant.html" target=" _blank">Plant Moodboard & Greenhouse Tour</a></li>
 </ul>
