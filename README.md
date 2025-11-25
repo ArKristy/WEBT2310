@@ -8,3 +8,8 @@
 <ul>
 <li><a href="FigmaSite.html/index.html" target=" _blank">Figma Site</a></li>
 </ul>
+
+
+<ul>
+<li><a href="PlantSite.html/plant.html" target=" _blank">Figma Site</a>Plant Moodboard & Greenhouse Tour</li>
+</ul>
